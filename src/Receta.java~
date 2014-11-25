@@ -1,0 +1,22 @@
+public class Receta {
+	
+	private String nombreReceta, preparacion;
+	private ArrayList<Ingrediente> ingredientes = new ArrayList<Ingrediente>();
+
+	public void setNombreReceta (String nombreRecetaIntroducido){
+			nombreReceta = nombreRecetaIntroducido;
+	 	}
+		
+		public String getNombreReceta(){
+			return nombreReceta;
+	 	}
+
+	public void setPreparacion (String preparacionIntroducido){
+			preparacion = preparacionIntroducido;
+	 	}
+		
+		public String getPreparacion(){
+			return preparacion;
+	 	}
+
+}

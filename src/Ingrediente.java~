@@ -1,0 +1,7 @@
+public class Ingrediente {
+	
+	private String nombreIngrediente;
+	private int cantidadGramos, cantidadUnidad;
+	private boolean enGramos;
+
+}
