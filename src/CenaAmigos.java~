@@ -96,26 +96,34 @@ public class CenaAmigos {
 /*-----------------------------------------------------------LECTURA DE FICHERO--------------------------------------------------------------*/
 
 		try {
+			s = new Scanner(fichero);
+			while (s.hasNextLine()){
+				String linea = s.nextLine();
+				String[] palabra = linea.split(", ");
+				Partido partido = new Partido();
 
-			sc = new Scanner(archivo);
-			while (sc.hasNextLine()) {
+				partido.setNombre(palabra[0]);
+				partido.setNumeroMiembros(palabra[1]);
+				partido.setAñoFundacion(Integer.parseInt(palabra[2]));
+				partido.setPresidente(palabra[3]);
 
-				String linea = sc.nextLine();
-				String[] palabra1 = linea.split("; ");
+				partidos.add(partido);
+		
+				System.out.println("Nombre del partido: " + partido.getNombre());
+				System.out.println("Númer de Afiliados: " + partido.getNumeroMiembros());
+				System.out.println("Año de Fundación: " + partido.getAñoFundacion());
+				System.out.println("Presidente: " + partido.getPresidente() + "\n");
 
-				//partido.setNombre(palabra[0]);
+				partidos.clear();
 			}
+
 		} catch (Exception e) {
-
 			e.printStackTrace();
-		} finally {
-
+		} finally{
 			try {
-
 				if (sc != null)
 					sc.close();
 			} catch (Exception e2) {
-
 				e2.printStackTrace();
 			}
 		}

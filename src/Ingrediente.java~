@@ -4,4 +4,43 @@ public class Ingrediente {
 	private int cantidadGramos, cantidadUnidad;
 	private boolean enGramos;
 
+	public void setNombreIngrediente (String nombreIngredienteIntroducido) {
+
+		this.nombreIngrediente = nombreIngredienteIntroducido;
+	}
+		
+	public String getNombreIngrediente() {
+
+		return nombreIngrediente;
+	}
+
+	public void setCantidadGramos (int cantidadGramosIntroducido) {
+
+		this.cantidadGramos = cantidadGramosIntroducido;
+	}
+		
+	public int getCantidadGramos() {
+
+		return cantidadGramos;
+	}
+
+	public void setCantidadUnidad (int cantidadUnidadIntroducido) {
+
+		this.cantidadUnidad = cantidadUnidadIntroducido;
+	}
+		
+	public int getCantidadUnidad() {
+
+		return cantidadUnidad;
+	}
+
+	public void setEnGramos (boolean enGramosIntroducido) {
+
+		this.enGramos = enGramosIntroducido;
+	}
+		
+	public boolean getEnGramos() {
+
+		return enGramos;
+	}
 }

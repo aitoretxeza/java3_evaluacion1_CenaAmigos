@@ -3,30 +3,36 @@ import java.util.ArrayList;
 public class Receta {
 	
 	private String nombreReceta, preparacion;
-	private ArrayList<Ingrediente> ingredientes = new ArrayList<Ingrediente>();
+	private ArrayList<Ingrediente> ingredientes;
 
-	public void setNombreReceta (String nombreRecetaIntroducido){
-			nombreReceta = nombreRecetaIntroducido;
-	 	}
-		
-	public String getNombreReceta(){
-			return nombreReceta;
-	 	}
+	public void setNombreReceta (String nombreRecetaIntroducido) {
 
-	public void setIngredientes (ArrayList ingredientesIntroducido){
-			ingredientes = ingredientesIntroducido;
-	 	}
+		this.nombreReceta = nombreRecetaIntroducido;
+	}
 		
-	public ArrayList getIngredientes(){
-			return ingredientes;
-	 	}
+	public String getNombreReceta() {
 
-	public void setPreparacion (String preparacionIntroducido){
-			preparacion = preparacionIntroducido;
-	 	}
+		return this.nombreReceta;
+	}
+
+	public void setIngredientes (ArrayList<Ingrediente> ingredientesIntroducido) {
+
+		this.ingredientes = ingredientesIntroducido;
+	}
 		
-	public String getPreparacion(){
-			return preparacion;
-	 	}
+	public ArrayList<Ingrediente> getIngredientes() {
+
+		return this.ingredientes;
+	}
+
+	public void setPreparacion (String preparacionIntroducido) {
+
+		this.preparacion = preparacionIntroducido;
+	}
+		
+	public String getPreparacion() {
+
+		return this.preparacion;
+	}
 
 }
